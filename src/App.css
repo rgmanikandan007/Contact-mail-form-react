@@ -1,0 +1,112 @@
+.mailer-container {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+.mailer {
+  flex: 1 1 50%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mailer h2 {
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.mailer p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: #666;
+}
+
+.mailer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.mailer label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.mailer input[type="text"], 
+.mailer input[type="email"], 
+.mailer textarea {
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mailer textarea {
+  height: 100px;
+  resize: none;
+}
+
+.mailer-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mailer-btn input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #c163f8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mailer-btn input[type="submit"]:hover {
+  background-color: #c163f8;
+}
+
+.information {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.information .address,
+.Callus,
+.Mail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon span {
+  font-size: 1.5rem;
+  color: #c163f8;
+}
+
+.map iframe {
+  width: 100%;
+  height: 200px;
+  border: 0;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .mailer-container {
+      flex-direction: column;
+  }
+
+  .mailer, .information {
+      flex: 1 1 100%;
+  }
+
+  .map iframe {
+      height: 300px;
+  }
+}
